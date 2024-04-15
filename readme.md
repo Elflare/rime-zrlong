@@ -125,13 +125,14 @@
 - **单字**：自然龙单字2码1500常用字覆盖近500个（双拼是300），2码一共约600个键位。单字前3000零重（颂用了特取码）。
 - **词组**：龙码词重10000多个（五笔词重13000左右，传统双拼18000左右）
 
+**单字测评**：
+
 ![字测评](https://github.com/Elflare/images-repo/blob/main/zrlong/bench/zi.jpg)
 
-单字测评
+**词组测评**：
 
 ![词测评](https://github.com/Elflare/images-repo/blob/main/zrlong/bench/ci.jpg)
 
-词组测评
 
 ## 鸣谢
 作者: [晡时之光](https://hanxinma.gitee.io/longma/zrl)
