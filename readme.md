@@ -79,7 +79,7 @@
 
 ## 用法
 ### 键位图
-![键位图片](https://hanxinma.gitee.io/longma/zranindex_files/zrlong_jianwei.jpg)
+![键位图片](https://hanxinma.gitee.io/longma/index_files/longma.png)
 
 ### 辅助码字根图
 ![辅助码字根](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/zigen.jpg)
