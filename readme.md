@@ -6,6 +6,7 @@
 ---
 ## 目录
 
+- [目录](#目录)
 - [简介](#简介)
 - [安装](#安装)
   - [使用 `git` 安装](#使用-git-安装)
@@ -14,9 +15,12 @@
   - [键位图](#键位图)
   - [辅助码字根图](#辅助码字根图)
   - [编码方式](#编码方式)
+    - [单字编码](#单字编码)
+    - [词编码](#词编码)
   - [实用功能](#实用功能)
     - [自定义短语](#自定义短语)
     - [反查](#反查)
+    - [手动造词](#手动造词)
     - [工具](#工具)
   - [飞键](#飞键)
 - [性能测评](#性能测评)
@@ -24,7 +28,8 @@
 ## 简介
 **自然龙** 是一种在传统双拼基础上进行创新的输入法，它**统一了声调和韵母**，采用**四码定长**的方式进行输入。
 
-- **声调和韵母的统一**：传统的双拼输入法往往不区分声调，导致编码信息利用率低下，离散弱，重码多。而自然龙将声调和韵母统一，高效利用编码空间，单字和词组能力都大幅提高。
+- **韵调统一**：传统的双拼输入法往往不区分声调，导致编码信息利用率低下，离散弱，重码多。而自然龙将声调和韵母统一，高效利用编码空间，单字和词组能力都大幅提高。
+- **静态码表**：使用静态码表，确定性 100%，熟练者甚至可以盲打。
 - **四码定长**：单字和词组最大码长为 4，打 2 字词**声韵声韵**有节奏感，输入过程更加舒适。
 - **双拼加形**：结合了双拼的高效率和形码的高准确性，形码部分采用自然码的辅助码，形码部分首码**义部优先**，**次码取大**，更加直观自然。
 - **手感优化**: 韵母分布利用程序算法+人工设计，**重码率**和**手感**皆超过传统音形、形码输入法。
@@ -91,12 +96,22 @@
 > This picture is from [℞ 魔然](https://github.com/ksqsf/rime-moran/wiki/%E6%95%99%E7%A8%8B#其二曰自然碼輔助碼)
 
 ### 编码方式
+#### 单字编码
 | 单字编码 | 演示编码 | 演示图片                                                                             |
 | -------- | -------- | ------------------------------------------------------------------------------------ |
 | 声       | d        | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/d.jpg)    |
 | 声韵     | di       | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/di.jpg)   |
 | 声韵辅   | usu      | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/usu.jpg)  |
 | 声韵辅辅 | ytdy     | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/ytdy.jpg) |
+
+#### 词编码
+> 数字代表第几个字（`0` 代表最后一个字），`S` 代表声母，`Y` 代表韵母
+
+| 多字编码     | 编码方式 | 演示编码 | 演示图片                                                                          |
+| ------------ | -------- | -------- | --------------------------------------------------------------------------------- |
+| 2 字词       | `S1 Y1 S2 Y2` | jidf     | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/jidf.jpg) |
+| 3 字词       | `S1 S2 S3 Y3` | jsjj     | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/jsjj.jpg) |
+| 4 字及以上词 | `S1 S2 S3 S0` | bnmz     | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/bnmz.jpg) |
 ### 实用功能
 
 #### 自定义短语
@@ -114,10 +129,19 @@
 | 反查方式   | 规则    | 演示                                                                                    |
 | ---------- | ------- | --------------------------------------------------------------------------------------- |
 | 通配符反查 | SY`     | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/kj%60.jpg)   |
-| 通配符反查 | SYF\`    | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/iik%60.jpg)  |
-| 虎码反查   | \`X      | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/%60j.jpg)    |
+| 通配符反查 | SYF\`   | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/iik%60.jpg)  |
+| 虎码反查   | \`X     | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/%60j.jpg)    |
 | 笔画反查   | obhhs   | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/obhhs.jpg)   |
 | 两分反查   | olfhoho | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/olfhoho.jpg) |
+
+#### 手动造词
+自然龙具有两种手动造词方法：
+
+| 造词方式                     | 演示编码     | 演示图片                                                                               |
+| ---------------------------- | ------------ | -------------------------------------------------------------------------------------- |
+| `'` 开头（前缀会被隐藏）     | `'ztp'rp'lj` | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/zrl_zaoci.jpg)  |
+| 打出一个字，上屏之前再按 `'` | `ztp'rp'lj`  | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/kj%60.jpg) |
+> 造的词排在默认编码之后
 #### 工具
 
 - **时间**：直接打 `sj`
