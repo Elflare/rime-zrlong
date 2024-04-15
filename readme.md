@@ -1,4 +1,4 @@
-<h1 style="text-align: center;"> 自然龙 Rime 输入方案 </h1>
+<h1 align="center"> 自然龙 Rime 输入方案 </h1>
 
 ---
 
