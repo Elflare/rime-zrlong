@@ -82,7 +82,7 @@
 ![键位图片](https://hanxinma.gitee.io/longma/index_files/longma.png)
 
 ### 辅助码字根图
-![辅助码字根](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/zigen.jpg)
+![辅助码字根](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/jianwei.jpg)
 
 > from [℞ 魔然](https://github.com/ksqsf/rime-moran/wiki/%E6%95%99%E7%A8%8B#其二曰自然碼輔助碼)
 
