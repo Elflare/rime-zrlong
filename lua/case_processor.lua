@@ -3,9 +3,17 @@
 -- 大于等于5码时，按 space 上屏
 local enter = 0xff0d
 local space = 32
-local function is_upper(ch)
-    -- ch >= 'A' and ch <= 'Z'
-    return ch >= 0x41 and ch <= 0x5a
+local function is_upper_or_not_number(input)
+    -- first_ch >= 'A' and first_ch <= 'Z'
+    -- second_ch is not number
+    -- this is for the feature that convert Arabic numerals to traditional Chinese numerals.
+    local first_ch = input:byte(1)
+    if #input > 1 then
+        local second_ch = input:byte(2)
+        return first_ch >= 65 and first_ch <= 90 and ( second_ch < 48 or second_ch > 57)
+    else
+        return first_ch >= 65 and first_ch <= 90
+    end
 end
 local function func(key_event, env)
     local context = env.engine.context
@@ -14,7 +22,7 @@ local function func(key_event, env)
         return 2
     end
     local schema = env.engine.schema
-    if is_upper(input:byte(1)) then
+    if is_upper_or_not_number(input) then
         if key_event.keycode == enter then
             env.engine:commit_text(input:sub(1, 1):lower() .. input:sub(2))
         elseif key_event.keycode == space then
