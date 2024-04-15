@@ -121,18 +121,18 @@
 自然龙具有四种反查方式：
 
 - 通配符反查：用自然码双拼反查，其中 `SYF` 分别代表：声母、韵母和第一个辅码
-- 虎码反查：用 \` 引导，`X` 代表任意字符
-- 笔画反查：用 `obh` 引导
-- 两分反查：用 `olf` 引导
+- 虎码反查：用 \` 引导，`X` 代表任意字母
+- 笔画反查：用 `obh` 引导，`hpszd` 分别代表横撇竖折点
+- 两分反查：用 `olf` 引导，用自然码双拼
 > 在反查时，上述前缀会被隐藏，以避免干扰。
 
-| 反查方式   | 规则    | 演示                                                                                    |
-| ---------- | ------- | --------------------------------------------------------------------------------------- |
-| 通配符反查 | SY`     | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/kj%60.jpg)   |
-| 通配符反查 | SYF\`   | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/iik%60.jpg)  |
-| 虎码反查   | \`X     | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/%60j.jpg)    |
-| 笔画反查   | obhhs   | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/obhhs.jpg)   |
-| 两分反查   | olfhoho | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/olfhoho.jpg) |
+| 反查方式   | 规则            | 演示编码 | 演示图片                                                                                    |
+| ---------- | --------------- | -------- | --------------------------------------------------------------------------------------- |
+| 通配符反查 | SY`             | ka\`     | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/kj%60.jpg)   |
+| 通配符反查 | SYF\`           | iik\`    | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/iik%60.jpg)  |
+| 虎码反查   | \`X             | \`j      | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/%60j.jpg)    |
+| 笔画反查   | obh[hpszd]      | obhhs    | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/obhhs.jpg)   |
+| 两分反查   | olf[自然码编码] | olfhoho  | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/olfhoho.jpg) |
 
 #### 手动造词
 自然龙具有两种手动造词方法：
@@ -140,7 +140,7 @@
 | 造词方式                     | 演示编码     | 演示图片                                                                                  |
 | ---------------------------- | ------------ | ----------------------------------------------------------------------------------------- |
 | `'` 开头（前缀会被隐藏）     | `'ztp'rp'lj` | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/zrl_zaoci.jpg) |
-| 打出一个字，上屏之前再按 `'` | `ztp'rp'lj`  | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/zrl_zaoci.jpg)     |
+| 打出一个字，上屏之前再按 `'` | `ztp'rp'lj`  | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/zrl_zaoci.jpg) |
 > 造的词排在默认编码之后
 #### 工具
 
