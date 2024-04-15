@@ -107,8 +107,8 @@
 #### 词编码
 > 数字代表第几个字（`0` 代表最后一个字），`S` 代表声母，`Y` 代表韵母
 
-| 多字编码     | 编码方式 | 演示编码 | 演示图片                                                                          |
-| ------------ | -------- | -------- | --------------------------------------------------------------------------------- |
+| 多字编码     | 编码方式      | 演示编码 | 演示图片                                                                             |
+| ------------ | ------------- | -------- | ------------------------------------------------------------------------------------ |
 | 2 字词       | `S1 Y1 S2 Y2` | jidf     | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/jidf.jpg) |
 | 3 字词       | `S1 S2 S3 Y3` | jsjj     | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/jsjj.jpg) |
 | 4 字及以上词 | `S1 S2 S3 S0` | bnmz     | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/bnmz.jpg) |
@@ -137,10 +137,10 @@
 #### 手动造词
 自然龙具有两种手动造词方法：
 
-| 造词方式                     | 演示编码     | 演示图片                                                                               |
-| ---------------------------- | ------------ | -------------------------------------------------------------------------------------- |
-| `'` 开头（前缀会被隐藏）     | `'ztp'rp'lj` | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/zrl_zaoci.jpg)  |
-| 打出一个字，上屏之前再按 `'` | `ztp'rp'lj`  | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/kj%60.jpg) |
+| 造词方式                     | 演示编码     | 演示图片                                                                                  |
+| ---------------------------- | ------------ | ----------------------------------------------------------------------------------------- |
+| `'` 开头（前缀会被隐藏）     | `'ztp'rp'lj` | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/zrl_zaoci.jpg) |
+| 打出一个字，上屏之前再按 `'` | `ztp'rp'lj`  | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/zrl_zaoci.jpg)     |
 > 造的词排在默认编码之后
 #### 工具
 
