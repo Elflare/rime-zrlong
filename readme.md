@@ -35,12 +35,13 @@
 - 首先确保已经装了 [Rime](https://rime.im/)
 - 若已有 Rime 的配置文件，请先备份
 
+**可选**:
+- 本配置所使用的字体为[霞鹜文楷](https://github.com/lxgw/LxgwWenKai)
+- 若想更换其他字体，可在 `weasel.custom.yaml` 中进行配置
 ### 使用 `git` 安装
-> 如果您还没有安装 Git，需要先下载并安装 Git。
+> 如果您还没有安装 Git，需要先下载并安装 [Git](https://git-scm.com/)。
 
-1. **打开命令行工具**：
-
-   - 打开 Windows PowerShell 或 Git Bash。
+1. **打开命令行工具**
 
 
 2. **克隆仓库**：
