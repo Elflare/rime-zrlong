@@ -97,18 +97,18 @@
 
 ### 编码方式
 #### 单字编码
-| 单字编码 | 演示编码 | 演示图片                                                                             |
-| -------- | -------- | :------------------------------------------------------------------------------------: |
-| 声       | d        | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/d.jpg)    |
-| 声韵     | di       | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/di.jpg)   |
+| 单字编码 | 演示编码 |                                       演示图片                                       |
+| -------- | -------- | :----------------------------------------------------------------------------------: |
+| 声       | d        |  ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/d.jpg)   |
+| 声韵     | di       |  ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/di.jpg)  |
 | 声韵辅   | usu      | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/usu.jpg)  |
 | 声韵辅辅 | ytdy     | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/ytdy.jpg) |
 
 #### 词编码
 > 数字代表第几个字（`0` 代表最后一个字），`S` 代表声母，`Y` 代表韵母
 
-| 多字编码     | 编码方式      | 演示编码 | 演示图片                                                                             |
-| ------------ | ------------- | -------- | :------------------------------------------------------------------------------------: |
+| 多字编码     | 编码方式      | 演示编码 |                                       演示图片                                       |
+| ------------ | ------------- | -------- | :----------------------------------------------------------------------------------: |
 | 2 字词       | `S1 Y1 S2 Y2` | jidf     | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/jidf.jpg) |
 | 3 字词       | `S1 S2 S3 Y3` | jsjj     | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/jsjj.jpg) |
 | 4 字及以上词 | `S1 S2 S3 S0` | bnmz     | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/bnmz.jpg) |
@@ -126,19 +126,19 @@
 - 两分反查：用 `olf` 引导，用自然码双拼
 > 在反查时，上述前缀会被隐藏，以避免干扰。
 
-| 反查方式   | 规则            | 演示编码 | 演示图片                                                                                    |
-| :----------: | :---------------: | :--------: | :---------------------------------------------------------------------------------------: |
-| 通配符反查 | SY`             | ka\`     | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/kj%60.jpg)   |
-| 通配符反查 | SYF\`           | iik\`    | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/iik%60.jpg)  |
-| 虎码反查   | \`X             | \`j      | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/%60j.jpg)    |
-| 笔画反查   | obh[hpszd]      | obhhs    | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/obhhs.jpg)   |
-| 两分反查   | olf[自然码编码] | olfhoho  | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/olfhoho.jpg) |
+|  反查方式  |      规则       | 演示编码 |                                        演示图片                                         |
+| :--------: | :-------------: | :------: | :-------------------------------------------------------------------------------------: |
+| 通配符反查 |       SY`       |   ka\`   |  ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/kj%60.jpg)  |
+| 通配符反查 |      SYF\`      |  iik\`   | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/iik%60.jpg)  |
+|  虎码反查  |       \`X       |   \`j    |  ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/%60j.jpg)   |
+|  笔画反查  |   obh[hpszd]    |  obhhs   |  ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/obhhs.jpg)  |
+|  两分反查  | olf[自然码编码] | olfhoho  | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/olfhoho.jpg) |
 
 #### 手动造词
 自然龙具有两种手动造词方法：
 
-| 造词方式                     | 演示编码     | 演示图片                                                                                  |
-| ---------------------------- | ------------ | :-----------------------------------------------------------------------------------------: |
+| 造词方式                     | 演示编码     |                                         演示图片                                          |
+| ---------------------------- | ------------ | :---------------------------------------------------------------------------------------: |
 | `'` 开头（前缀会被隐藏）     | `'ztp'rp'lj` | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/zrl_zaoci.jpg) |
 | 打出一个字，上屏之前再按 `'` | `ztp'rp'lj`  | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/zrl_zaoci.jpg) |
 > 造的词排在默认编码之后
