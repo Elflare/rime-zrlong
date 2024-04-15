@@ -1,5 +1,12 @@
 <h1 align="center"> 自然龙 Rime 输入方案 </h1>
+<p align="center">
+<a href="https://qm.qq.com/q/yj4E0tBrOg"><img src="
+https://img.shields.io/badge/%E7%82%B9%E5%87%BB%E9%93%BE%E6%8E%A5%E5%8A%A0%E5%85%A5%E7%BE%A4%E8%81%8A-%E3%80%90%E9%BE%99%E7%A0%81%E9%9F%B3%E5%BD%A2%E3%80%91-blue?logo=tencentqq
+"/></a>
 
+</p>
+
+---
 ## 目录
 
 - [简介](#简介)
