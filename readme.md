@@ -95,6 +95,10 @@
 | 声韵辅   | usu      | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/usu.jpg)  |
 | 声韵辅辅 | ytdy     | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/ytdy.jpg) |
 ### 实用功能
+
+#### 自定义短语
+在 `zrlong_custom_phrases.txt` 中配置，具体请参考该文件中的说明。
+
 #### 反查
 自然龙具有四种反查方式：
 
