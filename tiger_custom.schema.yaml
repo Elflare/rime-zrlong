@@ -1,0 +1,9 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: tiger_custom
+  name: "自定义短语·伪方案·勿用"
+
+translator:
+  dictionary: tiger_custom

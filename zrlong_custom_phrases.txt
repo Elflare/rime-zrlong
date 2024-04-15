@@ -1,0 +1,34 @@
+# Rime table
+# coding: utf-8
+#@db/db_name custom_phrase.txt
+#@db/db_type tabledb
+#
+
+# 修改後重新部署方可生效
+#
+# ⚠ 自定義短語總是出現在主詞庫詞條之前。
+#
+# 每行格式：文字 <tab> 編碼 <tab> 權重（權重越高，順序越靠前）
+#
+# 示例：
+√	ogb
+⑨	ojq
+😭	ou
+😭	ok
+😱	oj
+🤤	oks
+↑	ojts
+↓	ojtx
+→	ojty
+←	ojtz
+🙏	oq
+👊	oqt
+(╯°□°）╯︵┻━┻	oxmvo
+😋	ots
+🥰	oax
+😅	olh
+《	;w
+》	;e
+.	;d
+；	;q
+·	;y

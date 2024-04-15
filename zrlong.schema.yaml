@@ -1,0 +1,181 @@
+schema:
+  schema_id: zrlong
+  name: 自然龙
+  version: "20240225"
+  icon: "微软雅黑中.ico" # string 方案图标，格式： .ico
+  ascii_icon: "微软雅黑英.ico"
+  author:
+    - 自然碼發明人：周志農
+    - 方案製作：晡时之光
+    - modded by 小幽幽
+  description: |
+    乱序韵母，自然辅。
+  dependencies:
+    - tigress
+    - zrlf
+    - stroke
+    - moran_reverse
+switches:
+  - name: ascii_mode
+    states: [中文, 西文]
+  - name: full_shape
+    states: [半角, 全角]
+  - name: ascii_punct
+    states: [。，, ．，]
+  - name: emoji
+    states: [🈚, 🈶]
+
+engine:
+  processors:
+    - lua_processor@*case_processor
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - affix_segmentor@zkci
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - reverse_lookup_translator
+    - reverse_lookup_translator@reverse_tiger
+    - reverse_lookup_translator@reverse_stroke
+    - reverse_lookup_translator@reverse_zrlf
+    - table_translator
+    - table_translator@custom_phrase # 自定義短語
+    - table_translator@fixed
+    - table_translator@zkci
+    - history_translator@repeat
+    - lua_translator@*moran_shijian # 日期orq 節氣ojq 星期oxq 時間osj
+    - lua_translator@*moran_number # 數字轉大寫
+  filters:
+    - simplifier@emoji
+    - lua_filter@*moran_quick_code_hint
+    - uniquifier
+
+speller:
+  alphabet: "abcdefghijklmnopqrstuvwxyz;`"
+  delimiter: " '"
+  max_code_length: 4
+  auto_select: true
+  # auto_clear: max_length # manual | auto | max_length
+  auto_select_pattern: ;\w+ #自动上屏规则  对 [;] 引导的编码实行候选唯一自动上屏
+translator:
+  dictionary: zrlong
+  db_class: tabledb
+  enable_charset_filter: false
+  enable_sentence: false
+  enable_completion: false
+  enable_user_dict: false
+  initial_quality: 10000
+
+fixed:
+  dictionary: zrlong
+  db_class: tabledb
+  enable_charset_filter: false
+  enable_sentence: false
+  enable_completion: false
+  enable_user_dict: true
+  enable_encoder: true
+  encode_commit_history: false # 是否開啓自動造詞
+  initial_quality: 2000
+custom_phrase: # 自定義短語
+  dictionary: ""
+  user_dict: zrlong_custom_phrases
+  db_class: stabledb
+  enable_completion: false
+  enable_sentence: true
+  initial_quality: 20000
+
+reverse_format:
+  comment_format:
+    - xform/(\w\w);(\w\w)/$1[$2]/
+  preedit_format:
+    - xform/^o(lf|bh|cj)//
+
+reverse_tiger:
+  tag: reverse_tiger
+  dictionary: tigress
+  enable_completion: true
+  prefix: "`"
+  tips: 〔虎〕
+  __include: reverse_format
+
+reverse_stroke:
+  tag: reverse_stroke
+  dictionary: stroke
+  prefix: "obh"
+  enable_completion: true
+  tips: 〔hspnz〕
+  __include: reverse_format
+
+reverse_zrlf:
+  tag: reverse_zrlf
+  dictionary: zrlf
+  prefix: "olf"
+  enable_completion: true
+  tips: 〔两分〕
+  __include: reverse_format
+zkci: # 造詞
+  tag: zkci
+  db_class: tabledb
+  user_dict: zrlong
+  dictionary: zrlong
+  enable_user_dict: true
+  enable_charset_filter: false
+  enable_completion: false
+  enable_sentence: true
+  enable_encoder: false
+  encode_commit_history: false # 是否開啓自動造詞
+  max_phrase_length: 7
+  prefix: "'"
+  tips: 〔造词〕
+  initial_quality: 10
+repeat: # 重複上屏
+  input: "="
+  size: 1
+  initial_quality: 0
+
+moran:
+  quick_code_indicator: ""
+  enable_quick_code_hint: true
+  quick_code_hint_skip_chars: true
+
+emoji:
+  opencc_config: moran_emoji.json
+  option_name: emoji
+  tips: all
+
+reverse_lookup:
+  dictionary: moran.chars
+  enable_user_dict: false
+  tips: 〔通配〕
+
+punctuator:
+  import_preset: symbols
+
+key_binder:
+  import_preset: default
+  bindings:
+    - { when: has_menu, accept: ";", send: "1" } # 添加分号次选
+recognizer:
+  import_preset: default
+  patterns:
+    reverse_lookup: "(^(``[a-z`]+))|(^([a-z]{2}(`[a-z`]?|[a-z`]`)))"
+    zkci: "^[a-z]*'[a-z']*$"
+    reverse_tiger: "(^`$)|(^`[a-zA-Z]+$)"
+    reverse_stroke: "^obh[A-Za-z]*$"
+    reverse_zrlf: "^olf[A-Za-z]*$"
+    punct: "^/([0-9]0?|[A-Za-z]+)$"
+
+menu:
+  page_size: 6
+  alternative_select_keys: " 12345"
