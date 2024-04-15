@@ -105,12 +105,12 @@
 - 笔画反查：用 `obh` 引导
 - 两分反查：用 `olf` 引导
 > 在反查时，上述前缀会被隐藏，以避免干扰。
->
+
 | 反查方式   | 规则    | 演示                                                                                    |
 | ---------- | ------- | --------------------------------------------------------------------------------------- |
 | 通配符反查 | SY`     | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/kj%60.jpg)   |
-| 通配符反查 | SYF`    | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/iik%60.jpg)  |
-| 虎码反查   | `X      | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/%60j.jpg)    |
+| 通配符反查 | SYF\`    | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/iik%60.jpg)  |
+| 虎码反查   | \`X      | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/%60j.jpg)    |
 | 笔画反查   | obhhs   | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/obhhs.jpg)   |
 | 两分反查   | olfhoho | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/olfhoho.jpg) |
 #### 工具
@@ -119,10 +119,13 @@
 - **日期**：`orq`
 - **时间和日期**：`ors`
 - **中文数字小写转大写**：`S` 开头，后面接数字，如 `S123`，则变为：一百二十三
+- **Emoji**：`Ctrl + e` 切换 Emoji 表情滤镜，在 `zrlong.schema.yaml` 中的 `key_binder` 处配置
+- **分号次选**：默认开启，在 `zrlong.schema.yaml` 中的 `key_binder` 处配置
 - **英文输入**：
-    - 默认没开启空码自动清屏，所以空码时可直接输入英文
-    - 首字母大写，用回车上屏自动转为小写：如 `Zrlong`，按回车后变为`zrlong`
-    - 首字母大写，用空格上屏则不变：如 `Zrlong`，按空格则为 `Zrlong`
+    - 默认没开启空码自动清屏，所以空码时可直接输入英文。
+    - 默认**关闭了左 Shift 切换英文，仅使用右 Shift 和右 Ctrl 切换**，若想改变，请在 `default.custom.yaml` 中，将 `"ascii_composer/switch_key/Shift_L": noop` 这句行注释掉，或将 `noop` 改为 `commit_code`。
+    - 首字母大写，用回车上屏自动转为小写：如 `Zrlong`，按回车后变为 `zrlong`。
+    - 首字母大写，用空格上屏则不变：如 `Zrlong`，按空格则为 `Zrlong`。
 ### 飞键
 - 仅将声母 y 飞到了 e，原因是 e 的英文发音和 y 的拼音很像。韵母不受影响。
 - 飞键的权重更低，不影响正常编码。

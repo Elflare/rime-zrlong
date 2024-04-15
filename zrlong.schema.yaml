@@ -166,6 +166,8 @@ key_binder:
   import_preset: default
   bindings:
     - { when: has_menu, accept: ";", send: "1" } # 添加分号次选
+    - { when: has_menu, accept: "Control+e", toggle: emoji }
+
 recognizer:
   import_preset: default
   patterns:
