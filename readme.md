@@ -82,7 +82,7 @@
 ![键位图片](https://hanxinma.gitee.io/longma/zranindex_files/zrlong_jianwei.jpg)
 
 ### 辅助码字根图
-![辅助码字根](https://private-user-images.githubusercontent.com/23358293/316281971-d250dcae-d4f6-48d7-bfbd-df3ec4a12f1f.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTMxNjQ1MTcsIm5iZiI6MTcxMzE2NDIxNywicGF0aCI6Ii8yMzM1ODI5My8zMTYyODE5NzEtZDI1MGRjYWUtZDRmNi00OGQ3LWJmYmQtZGYzZWM0YTEyZjFmLmpwZWc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNDE1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDQxNVQwNjU2NTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wN2FmNGVmMGVhNTllMDEwMjNkNmZhMTYwN2I5OTc2ZDY3MDlmYWM5ZmZhMzRlMmVmYTU0NjkwNmVjNzk2ODhkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.AByDP_ZpG8dviOdD-uQgnRFd4tcpoGva1KXILnhjljQ)
+![辅助码字根](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/zigen.jpg)
 
 > from [℞ 魔然](https://github.com/ksqsf/rime-moran/wiki/%E6%95%99%E7%A8%8B#其二曰自然碼輔助碼)
 
