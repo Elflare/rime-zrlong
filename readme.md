@@ -120,7 +120,8 @@
 - **时间和日期**：`ors`
 - **中文数字小写转大写**：`S` 开头，后面接数字，如 `S123`，则变为：一百二十三
 - **Emoji**：`Ctrl + e` 切换 Emoji 表情滤镜，在 `zrlong.schema.yaml` 中的 `key_binder` 处配置
-- **分号次选**：默认开启，在 `zrlong.schema.yaml` 中的 `key_binder` 处配置
+- **空格首选**：默认选重为 `_12345` （其中下划线为空格），在 `zrlong.schema.yaml` 中的 `menu` 处配置
+- **分号次选**：默认为分号或 "1" 次选，在 `zrlong.schema.yaml` 中的 `key_binder` 处配置
 - **英文输入**：
     - 默认没开启空码自动清屏，所以空码时可直接输入英文
     - 默认**关闭了左 Shift 切换英文，仅使用右 Shift 和右 Ctrl 切换**，若想改变，请在 `default.custom.yaml` 中，将 `"ascii_composer/switch_key/Shift_L": noop` 这句行注释掉，或将 `noop` 改为 `commit_code`
