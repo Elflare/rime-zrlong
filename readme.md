@@ -119,13 +119,20 @@
 - **首字母大写，用回车上屏自动转为小写**：如 `Zrlong`，按回车后变为`zrlong`
 - **首字母大写，用空格上屏则不变**：如 `Zrlong`，按空格则为 `Zrlong`
 ### 飞键
-- 仅将 y 飞到了 e，原因是 e 的英文发音和y的拼音很像
+- 仅将 y 飞到了 e，原因是 e 的英文发音和 y 的拼音很像
 - 飞键的权重更低，不影响正常编码
 ## 性能测评
 - **单字**：自然龙单字2码1500常用字覆盖近500个（双拼是300），2码一共约600个键位。单字前3000零重（颂用了特取码）。
 - **词组**：龙码词重10000多个（五笔词重13000左右，传统双拼18000左右）
+
 ![字测评](https://github.com/Elflare/images-repo/blob/main/zrlong/bench/zi.jpg)
+
+单字测评
+
 ![词测评](https://github.com/Elflare/images-repo/blob/main/zrlong/bench/ci.jpg)
+
+词组测评
+
 ## 鸣谢
 作者: [晡时之光](https://hanxinma.gitee.io/longma/zrl)
 
