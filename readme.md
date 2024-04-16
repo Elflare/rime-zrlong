@@ -97,13 +97,13 @@
 
 ### 键位图
 
-![键位图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/jianwei.jpg)
+![键位图片](https://raw.githubusercontent.com/Elflare/images-repo/blob/main/zrlong/sample/jianwei.jpg)
 
 ### 辅助码字根图
 
-![辅助码字根](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/zigen.jpg)
+![辅助码字根](https://raw.githubusercontent.com/Elflare/images-repo/blob/main/zrlong/sample/zigen.jpg)
 
-> This picture is from [℞ 魔然](https://github.com/ksqsf/rime-moran/wiki/%E6%95%99%E7%A8%8B#其二曰自然碼輔助碼)
+> This picture is from [℞ 魔然](https://raw.githubusercontent.com/ksqsf/rime-moran/wiki/%E6%95%99%E7%A8%8B#其二曰自然碼輔助碼)
 
 ### 编码方式
 
@@ -111,10 +111,10 @@
 
 | 单字编码 | 演示编码 |                                       演示图片                                       |
 | -------- | -------- | :----------------------------------------------------------------------------------: |
-| 声       | d        |  ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/d.jpg)   |
-| 声韵     | di       |  ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/di.jpg)  |
-| 声韵辅   | usu      | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/usu.jpg)  |
-| 声韵辅辅 | ytdy     | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/ytdy.jpg) |
+| 声       | d        |  ![示例图片](https://raw.githubusercontent.com/Elflare/images-repo/main/zrlong/sample/d.jpg)   |
+| 声韵     | di       |  ![示例图片](https://raw.githubusercontent.com/Elflare/images-repo/main/zrlong/sample/di.jpg)  |
+| 声韵辅   | usu      | ![示例图片](https://raw.githubusercontent.com/Elflare/images-repo/main/zrlong/sample/usu.jpg)  |
+| 声韵辅辅 | ytdy     | ![示例图片](https://raw.githubusercontent.com/Elflare/images-repo/main/zrlong/sample/ytdy.jpg) |
 
 #### 词编码
 
@@ -122,9 +122,9 @@
 
 | 多字编码     | 编码方式      | 演示编码 |                                       演示图片                                       |
 | ------------ | ------------- | -------- | :----------------------------------------------------------------------------------: |
-| 2 字词       | `S1 Y1 S2 Y2` | jidf     | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/jidf.jpg) |
-| 3 字词       | `S1 S2 S3 Y3` | jsjj     | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/jsjj.jpg) |
-| 4 字及以上词 | `S1 S2 S3 S0` | bnmz     | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/bnmz.jpg) |
+| 2 字词       | `S1 Y1 S2 Y2` | jidf     | ![示例图片](https://raw.githubusercontent.com/Elflare/images-repo/blob/main/zrlong/sample/jidf.jpg) |
+| 3 字词       | `S1 S2 S3 Y3` | jsjj     | ![示例图片](https://raw.githubusercontent.com/Elflare/images-repo/blob/main/zrlong/sample/jsjj.jpg) |
+| 4 字及以上词 | `S1 S2 S3 S0` | bnmz     | ![示例图片](https://raw.githubusercontent.com/Elflare/images-repo/blob/main/zrlong/sample/bnmz.jpg) |
 
 ### 实用功能
 
@@ -144,11 +144,11 @@
 
 |  反查方式  |       规则       | 演示编码 |                                        演示图片                                         |
 | :--------: | :--------------: | :------: | :-------------------------------------------------------------------------------------: |
-| 通配符反查 |      SY\`F       |   ka\`   |  ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/kj%60.jpg)  |
-| 通配符反查 |      SYF\`       |  iik\`   | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/iik%60.jpg)  |
-|  虎码反查  |       \`X+       |   \`j    |  ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/%60j.jpg)   |
-|  笔画反查  |   obh[hpszd]+    |  obhhs   |  ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/obhhs.jpg)  |
-|  两分反查  | olf[自然码编码]+ | olfhoho  | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/olfhoho.jpg) |
+| 通配符反查 |      SY\`F       |   ka\`   |  ![示例图片](https://raw.githubusercontent.com/Elflare/images-repo/blob/main/zrlong/sample/kj%60.jpg)  |
+| 通配符反查 |      SYF\`       |  iik\`   | ![示例图片](https://raw.githubusercontent.com/Elflare/images-repo/blob/main/zrlong/sample/iik%60.jpg)  |
+|  虎码反查  |       \`X+       |   \`j    |  ![示例图片](https://raw.githubusercontent.com/Elflare/images-repo/main/zrlong/sample/%60j.jpg)   |
+|  笔画反查  |   obh[hpszd]+    |  obhhs   |  ![示例图片](https://raw.githubusercontent.com/Elflare/images-repo/blob/main/zrlong/sample/obhhs.jpg)  |
+|  两分反查  | olf[自然码编码]+ | olfhoho  | ![示例图片](https://raw.githubusercontent.com/Elflare/images-repo/blob/main/zrlong/sample/olfhoho.jpg) |
 
 #### 手动造词
 
@@ -156,8 +156,8 @@
 
 | 造词方式                     | 演示编码     |                                         演示图片                                          |
 | ---------------------------- | ------------ | :---------------------------------------------------------------------------------------: |
-| `'` 开头（前缀会被隐藏）     | `'ztp'rp'lj` | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/zrl_zaoci.jpg) |
-| 打出一个字，上屏之前再按 `'` | `ztp'rp'lj`  | ![示例图片](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/zrl_zaoci.jpg) |
+| `'` 开头（前缀会被隐藏）     | `'ztp'rp'lj` | ![示例图片](https://raw.githubusercontent.com/Elflare/images-repo/blob/main/zrlong/sample/zrl_zaoci.jpg) |
+| 打出一个字，上屏之前再按 `'` | `ztp'rp'lj`  | ![示例图片](https://raw.githubusercontent.com/Elflare/images-repo/blob/main/zrlong/sample/zrl_zaoci.jpg) |
 
 > 造的词排在默认编码之后
 
@@ -176,7 +176,7 @@
   - 首字母大写，用回车上屏自动转为小写：如 `Zrlong`，按回车后变为 `zrlong`
   - 首字母大写，用空格上屏则不变：如 `Zrlong`，按空格则为 `Zrlong`
 - **简码提示**：可显示字或词的简码：
-  ![简码提示](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/jianmatishi.jpg)
+  ![简码提示](https://raw.githubusercontent.com/Elflare/images-repo/blob/main/zrlong/sample/jianmatishi.jpg)
 
 ### 飞键
 
@@ -190,11 +190,11 @@
 
 **单字测评**：
 
-![字测评](https://github.com/Elflare/images-repo/blob/main/zrlong/bench/zi.jpg)
+![字测评](https://raw.githubusercontent.com/Elflare/images-repo/blob/main/zrlong/bench/zi.jpg)
 
 **词组测评**：
 
-![词测评](https://github.com/Elflare/images-repo/blob/main/zrlong/bench/ci.jpg)
+![词测评](https://raw.githubusercontent.com/Elflare/images-repo/blob/main/zrlong/bench/ci.jpg)
 
 ## 鸣谢
 
