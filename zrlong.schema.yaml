@@ -165,7 +165,7 @@ punctuator:
 key_binder:
   import_preset: default
   bindings:
-    - { when: has_menu, accept: ";", send: "1" } # 分号次选，若改了选重菜单，从 1 开始的话，请将 1 改成 2
+    - { when: has_menu, accept: ";", send: "2" } # 分号次选
     - { when: has_menu, accept: "Control+e", toggle: emoji }
 
 recognizer:
@@ -179,5 +179,5 @@ recognizer:
     punct: "^/([0-9]0?|[A-Za-z]+)$"
 
 menu:
-  page_size: 6
-  alternative_select_keys: " 12345" # 默认为空格 12345 选重，若想改为 12345 选重，则记得改上面的分号次选
+  page_size: 5
+  alternative_select_keys: "12345" 
