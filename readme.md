@@ -120,8 +120,8 @@
 
 > 数字代表第几个字（`0` 代表最后一个字），`S` 代表声母，`Y` 代表韵母
 
-| 多字编码     | 编码方式      | 演示编码 |                                              演示图片                                               |
-| ------------ | ------------- | -------- | :-------------------------------------------------------------------------------------------------: |
+| 多字编码     | 编码方式      | 演示编码 |                                            演示图片                                            |
+| ------------ | ------------- | -------- | :--------------------------------------------------------------------------------------------: |
 | 2 字词       | `S1 Y1 S2 Y2` | jidf     | ![示例图片](https://raw.githubusercontent.com/Elflare/images-repo/main/zrlong/sample/jidf.jpg) |
 | 3 字词       | `S1 S2 S3 Y3` | jsjj     | ![示例图片](https://raw.githubusercontent.com/Elflare/images-repo/main/zrlong/sample/jsjj.jpg) |
 | 4 字及以上词 | `S1 S2 S3 S0` | bnmz     | ![示例图片](https://raw.githubusercontent.com/Elflare/images-repo/main/zrlong/sample/bnmz.jpg) |
@@ -142,11 +142,11 @@
 - 两分反查：用 `olf` 引导，自然码双拼编码，`+` 代表需要一个或多个字母
   > 在反查时，上述前缀会被隐藏，以避免干扰。
 
-|  反查方式  |       规则       | 演示编码 |                                                演示图片                                                |
-| :--------: | :--------------: | :------: | :----------------------------------------------------------------------------------------------------: |
+|  反查方式  |       规则       | 演示编码 |                                             演示图片                                              |
+| :--------: | :--------------: | :------: | :-----------------------------------------------------------------------------------------------: |
 | 通配符反查 |      SY\`F       |   ka\`   |  ![示例图片](https://raw.githubusercontent.com/Elflare/images-repo/main/zrlong/sample/kj%60.jpg)  |
 | 通配符反查 |      SYF\`       |  iik\`   | ![示例图片](https://raw.githubusercontent.com/Elflare/images-repo/main/zrlong/sample/iik%60.jpg)  |
-|  虎码反查  |       \`X+       |   \`j    |     ![示例图片](https://raw.githubusercontent.com/Elflare/images-repo/main/zrlong/sample/%60j.jpg)     |
+|  虎码反查  |       \`X+       |   \`j    |  ![示例图片](https://raw.githubusercontent.com/Elflare/images-repo/main/zrlong/sample/%60j.jpg)   |
 |  笔画反查  |   obh[hpszd]+    |  obhhs   |  ![示例图片](https://raw.githubusercontent.com/Elflare/images-repo/main/zrlong/sample/obhhs.jpg)  |
 |  两分反查  | olf[自然码编码]+ | olfhoho  | ![示例图片](https://raw.githubusercontent.com/Elflare/images-repo/main/zrlong/sample/olfhoho.jpg) |
 
@@ -154,12 +154,12 @@
 
 自然龙具有两种手动造词方法：
 
-| 造词方式                     | 演示编码     |                                                 演示图片                                                 |
-| ---------------------------- | ------------ | :------------------------------------------------------------------------------------------------------: |
+| 造词方式                     | 演示编码     |                                              演示图片                                               |
+| ---------------------------- | ------------ | :-------------------------------------------------------------------------------------------------: |
 | `'` 开头（前缀会被隐藏）     | `'ztp'rp'lj` | ![示例图片](https://raw.githubusercontent.com/Elflare/images-repo/main/zrlong/sample/zrl_zaoci.jpg) |
 | 打出一个字，上屏之前再按 `'` | `ztp'rp'lj`  | ![示例图片](https://raw.githubusercontent.com/Elflare/images-repo/main/zrlong/sample/zrl_zaoci.jpg) |
 
-> 造的词排在默认编码之后
+> 造的词排在默认编码之后。文件在 `zrlong.txt` 中。
 
 #### 工具
 
@@ -168,8 +168,8 @@
 - **时间和日期**：`ors`
 - **中文数字小写转大写**：`S` 开头，后面接数字，如 `S123`，则变为：一百二十三
 - **Emoji**：`Ctrl + e` 切换 Emoji 表情滤镜，在 `zrlong.schema.yaml` 中的 `key_binder` 处配置
-- **空格首选**：默认选重为 `_12345` （其中下划线为空格），在 `zrlong.schema.yaml` 中的 `menu` 处配置
-- **分号次选**：默认为分号或 "1" 次选，在 `zrlong.schema.yaml` 中的 `key_binder` 处配置
+- **空格首选**：默认选重为 `12345` ，在 `zrlong.schema.yaml` 中的 `menu` 处配置
+- **分号次选**：在 `zrlong.schema.yaml` 中的 `key_binder` 处配置
 - **英文输入**：
   - 默认没开启空码自动清屏，所以空码时可直接输入英文
   - 默认**关闭了左 Shift 切换英文，仅使用右 Shift 和右 Ctrl 切换**，若想改变，请在 `default.custom.yaml` 中，将 `"ascii_composer/switch_key/Shift_L": noop` 这句行注释掉，或将 `noop` 改为 `commit_code`
