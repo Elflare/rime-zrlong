@@ -156,7 +156,6 @@
     - 首字母大写，用回车上屏自动转为小写：如 `Zrlong`，按回车后变为 `zrlong`
     - 首字母大写，用空格上屏则不变：如 `Zrlong`，按空格则为 `Zrlong`
 - **简码提示**：可显示字或詞的简码。
-
 ![简码提示](https://github.com/Elflare/images-repo/blob/main/zrlong/sample/jianmatishi.jpg)
 
 ### 飞键
