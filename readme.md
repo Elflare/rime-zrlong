@@ -61,17 +61,17 @@
 2. **克隆仓库**：
    - 使用 `git clone` 命令克隆仓库。如果您已经安装了 Git，可以直接执行以下命令：
      ```bash
-     git clone https://github.com/Elflare/zrlong.git
+     git clone https://github.com/Elflare/rime-zrlong.git
      ```
 3. **移动到目录**：
 
    - 使用命令将其移动到 Rime 的用户目录：
      ```bash
-     robocopy zrlong "您的 Rime 用户目录" /E /MOVE
+     robocopy rime-zrlong "您的 Rime 用户目录" /E /MOVE
      ```
    - 或：
      ```bash
-     xcopy zrlong "您的 Rime 用户目录" /E /I /Y
+     xcopy rime-zrlong "您的 Rime 用户目录" /E /I /Y
      ```
 
 ### 手动安装
@@ -86,12 +86,12 @@
 
    - 在您下载文件夹中找到下载的 ZIP 文件。
    - 将该文件，解压到能找到的位置。
-   - 解压后，您将得到一个名为 `zrlong` 的文件夹。
+   - 解压后，您将得到一个名为 `rime-zrlong` 的文件夹。
 
 3. **移动文件到目标目录**：
    - 打开文件资源管理器。
    - 进入解压后的文件夹所在位置。
-   - 打开 `zrlong` 文件夹，将**里面的所有文件，包含文件夹**拖放到`您的 Rime 用户目录`（若不知道，可右键电脑状态栏右下角的 Rime 图标，选择 `用户文件夹`）。
+   - 打开 `rime-zrlong` 文件夹，将**里面的所有文件，包含文件夹**拖放到`您的 Rime 用户目录`（若不知道，可右键电脑状态栏右下角的 Rime 图标，选择 `用户文件夹`）。
 
 ## 用法
 
