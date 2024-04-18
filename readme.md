@@ -101,7 +101,7 @@
 
 ### 辅助码字根图
 
-![辅助码字根](https://raw.githubusercontent.com/Elflare/images-repo/main/zrlong/sample/zigen.jpg)
+![辅助码字根](https://raw.githubusercontent.com/Elflare/images-repo/main/zrlong/sample/fuzhuma.jpg)
 
 > This picture is from [℞ 魔然](https://raw.githubusercontent.com/ksqsf/rime-moran/wiki/%E6%95%99%E7%A8%8B#其二曰自然碼輔助碼)
 
