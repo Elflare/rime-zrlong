@@ -61,7 +61,7 @@
 2. **克隆仓库**：
    - 使用 `git clone` 命令克隆仓库。如果您已经安装了 Git，可以直接执行以下命令：
      ```bash
-     git clone https://github.com/Elflare/rime-zrlong.git
+     git clone --depth=1 https://github.com/Elflare/rime-zrlong.git
      ```
 3. **移动到目录**：
 
