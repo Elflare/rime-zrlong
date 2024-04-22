@@ -18,6 +18,6 @@ jobs:
           # 使用 HTTPS URL 和 PAT
           git remote add gitlab https://Elflare:${{ secrets.GITLAB_TOKEN }}@gitlab.com/Elflare/zrlong.git
           git fetch gitlab
-          git push gitlab HEAD:main --force  # 强制推送到GitLab的main分支
+          git push gitlab HEAD:main
         env:
           GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }} # 使用秘密环境变量
