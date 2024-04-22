@@ -1,8 +1,22 @@
+name: Push to GitLab
 on: push
 jobs:
   push_gitlab:
     runs-on: ubuntu-latest
     steps:
-      - run: pwd
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # 确保获取完整的仓库历史
 
-      - run: ls
+      - name: Set up Git
+        run: |
+          git config --global user.name ${{ secrets.USERNAME }}
+          git config --global user.email ${{ secrets.PASSWORD }}
+
+      - name: Push to GitLab
+        run: |
+          git remote add gitlab https://gitlab.com/Elflare/zrlong.git
+          git fetch gitlab
+          git push gitlab HEAD:main --force  # 强制推送到GitLab的main分支
+        env:
+          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }} # 使用秘密环境变量
