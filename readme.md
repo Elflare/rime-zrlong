@@ -176,7 +176,8 @@
   - 首字母大写，用空格上屏则不变：如 `Zrlong`，按空格则为 `Zrlong`
 - **简码提示**：可显示字或词的简码：
   ![简码提示](https://raw.githubusercontent.com/Elflare/images-repo/main/zrlong/sample/jianmatishi.jpg)
-- **二简补全**：将 `自然龙二简补全.txt` 中的内容复制到 `zrlong.dict.yaml` 中（thanks to 西金石）
+- **二简词补全**：将 `自然龙二简补全.txt` 中的内容复制到 `zrlong.dict.yaml` 中（thanks to 西金石）
+- **辅码部首**：用 `ob` 引导，如 `obc` ，则出现 `艹` 等部首（thanks to 西金石）
 ### 飞键
 
 - 仅将声母 y 飞到了 e，原因是 e 的英文发音和 y 的拼音很像。韵母不受影响。
