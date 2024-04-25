@@ -59,6 +59,7 @@ speller:
     - xform/^([aoe])([ioun]\d)$/$1$1$2/
     - xform/^([aoe])(ng\d)$/$1$1$2/
     - xform/^([aoe])(\d)$/$1$1$2/
+    - xform/^(ng\d)$/ee$1/
     - xform/^sh/U/
     - xform/^ch/I/
     - xform/^zh/V/
@@ -92,6 +93,11 @@ speller:
     - xform/uang2$/B/
     - xform/uang3$/U/
     - xform/uang4$/E/
+    - xform/(.)eng1$/$1C/
+    - xform/(.)eng2$/$1F/
+    - xform/(.)eng3$/$1Y/
+    - xform/(.)eng4$/$1F/
+    - xform/(.)eng5$/$1C/
     - xform/uai4$/F/
     - xform/uai3$/P/
     - xform/uai2$/S/
@@ -119,18 +125,14 @@ speller:
     - xform/en1$/E/
     - xform/en5$/E/
     - xform/ia4$/X/
-    - xform/(.)eng1$/$1C/
-    - xform/(.)eng5$/$1C/
-    - xform/eng1$/C/
-    - xform/eng5$/C/
     - xform/uo4$/P/
-    - xform/(.)eng2$/$1F/
-    - xform/eng2$/F/
     - xform/uo1$/S/
     - xform/uo5$/S/
     - xform/(.)ong4$/$1Y/
-    - xform/ing2$/N/
     - xform/ia1$/D/
+    - xform/ia2$/C/
+    - xform/ia3$/N/
+    - xform/ia4$/X/
     - xform/ia5$/D/
     - xform/(.)ang1$/$1U/
     - xform/(.)ang5$/$1U/
@@ -138,13 +140,17 @@ speller:
     - xform/(.)ai1$/$1B/
     - xform/(.)ai5$/$1B/
     - xform/in1$/H/
+    - xform/in2$/C/
+    - xform/in3$/X/
+    - xform/in4$/V/
     - xform/in5$/H/
     - xform/uo3$/L/
-    - xform/in4$/V/
     - xform/(.)ong2$/$1J/
     - xform/ing1$/E/
-    - xform/ing5$/E/
+    - xform/ing2$/N/
+    - xform/ing3$/W/
     - xform/ing4$/W/
+    - xform/ing5$/E/
     - xform/(.)ou1$/$1X/
     - xform/(.)ou5$/$1X/
     - xform/(.)an2$/$1P/
@@ -157,15 +163,8 @@ speller:
     - xform/(.)an1$/$1N/
     - xform/(.)an5$/$1N/
     - xform/uo2$/L/
-    - xform/ie1$/K/
-    - xform/ie5$/K/
     - xform/(.)an4$/$1A/
-    - xform/(.)eng3$/$1Y/
-    - xform/eng3$/Y/
-    - xform/(.)eng4$/$1F/
-    - xform/eng4$/F/
     - xform/(.)ei2$/$1R/
-    - xform/ue2$/I/
     - xform/(.)ong3$/$1N/
     - xform/(.)ou2$/$1A/
     - xform/ui1$/T/
@@ -174,11 +173,17 @@ speller:
     - xform/ui4$/F/
     - xform/ui5$/T/
     - xform/(.)ei3$/$1J/
-    - xform/ie2$/S/
-    - xform/ue4$/D/
+    - xform/ue1$/U/
+    - xform/ue2$/I/
     - xform/ue3$/O/
+    - xform/ue4$/D/
+    - xform/ue4$/U/
     - xform/(.)ang2$/$1W/
+    - xform/ie1$/K/
+    - xform/ie2$/S/
     - xform/ie3$/C/
+    - xform/ie4$/Q/
+    - xform/ie5$/K/
     - xform/(.)ei1$/$1I/
     - xform/(.)ei5$/$1I/
     - xform/(.)ai3$/$1U/
@@ -187,8 +192,11 @@ speller:
     - xform/v3$/S/
     - xform/v4$/F/
     - xform/(.)an3$/$1O/
-    - xform/in2$/C/
+    - xform/un1$/G/
+    - xform/un2$/F/
+    - xform/un3$/O/
     - xform/un4$/R/
+    - xform/un5$/G/
     - xform/er1$/eQ/
     - xform/er2$/eK/
     - xform/er3$/eU/
