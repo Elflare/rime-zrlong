@@ -10,9 +10,8 @@
 #每行格式：文字 <Tab> 编码 <Tab> 权重（权重越高，顺序越靠前）
 #分号引导可自动上屏（在 zrlong.schema.yaml 的 auto_select_pattern 处配置）
 # 示例：
-√	ogb
-⑨	ojq
-😭	ou
+√	ogx
+⑨	ojz
 😭	ok
 😱	oj
 🤤	oks
@@ -22,7 +21,7 @@
 ←	ojtz
 🙏	oq
 👊	oqt
-(╯°□°）╯︵┻━┻	oxmvo
+(╯°□°）╯︵┻━┻	oxrvs
 😋	ots
 🥰	oax
 😅	olh
