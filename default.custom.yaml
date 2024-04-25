@@ -14,3 +14,4 @@ patch:
   "menu/page_size": 5
   schema_list:
     - {schema: zrlong}
+    - {schema: zrlong_sentence}

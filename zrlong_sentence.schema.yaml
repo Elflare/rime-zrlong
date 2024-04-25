@@ -1,0 +1,279 @@
+schema:
+  schema_id: zrlong_sentence
+  name: 自然龙-整
+  version: "20240425"
+  author:
+    - 自然碼發明人：周志農
+    - 方案製作：晡时之光
+    - modded by 小幽幽
+    - 词库 by 蓝落萧
+  description: |
+    自然龙的整句模式。
+switches:
+  - name: ascii_mode
+    states: [中文, 西文]
+  - name: full_shape
+    states: [半角, 全角]
+  - name: ascii_punct
+    states: [。，, ．，]
+  - name: emoji
+    states: [🈚, 🈶]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - reverse_lookup_translator
+    - table_translator@custom_phrase # 自定義短語
+    # - history_translator@repeat
+    - lua_translator@*moran_shijian # 日期orq 節氣ojq 星期oxq 時間osj
+    - lua_translator@*moran_number # 數字轉大寫
+    - script_translator
+  filters:
+    - simplifier@emoji
+    - uniquifier
+
+speller:
+  alphabet: "abcdefghijklmnopqrstuvwxyz;`"
+  delimiter: "'"
+  # max_code_length: 4
+  # auto_select: true
+  # auto_clear: max_length # manual | auto | max_length
+  # auto_select_pattern: ;\w+ #自动上屏规则  对 [;] 引导的编码实行候选唯一自动上屏
+  algebra:
+    - xform/^([jqxy])u(\d)$/$1v$2/
+    - xform/^([aoe])([ioun]\d)$/$1$1$2/
+    - xform/^([aoe])(ng\d)$/$1$1$2/
+    - xform/^([aoe])(\d)$/$1$1$2/
+    - xform/^sh/U/
+    - xform/^ch/I/
+    - xform/^zh/V/
+    - xform/iao4$/L/
+    - xform/iao3$/L/
+    - xform/iao2$/U/
+    - xform/iao5$/M/
+    - xform/iao1$/M/
+    - xform/ian1$/R/
+    - xform/ian2$/V/
+    - xform/ian3$/P/
+    - xform/ian4$/A/
+    - xform/ian5$/R/
+    - xform/uan4$/C/
+    - xform/uan3$/S/
+    - xform/uan2$/O/
+    - xform/uan1$/D/
+    - xform/uan5$/D/
+    - xform/iang4$/E/
+    - xform/iang3$/U/
+    - xform/iang2$/I/
+    - xform/iang1$/Y/
+    - xform/iang5$/Y/
+    - xform/iong4$/H/
+    - xform/iong3$/E/
+    - xform/iong2$/K/
+    - xform/iong1$/P/
+    - xform/iong5$/P/
+    - xform/uang5$/W/
+    - xform/uang1$/W/
+    - xform/uang2$/B/
+    - xform/uang3$/U/
+    - xform/uang4$/E/
+    - xform/uai4$/F/
+    - xform/uai3$/P/
+    - xform/uai2$/S/
+    - xform/uai1$/G/
+    - xform/uai5$/G/
+    - xform/ua4$/G/
+    - xform/ua3$/G/
+    - xform/ua2$/T/
+    - xform/ua1$/S/
+    - xform/ua5$/S/
+    - xform/(.)ai4$/$1O/
+    - xform/(.)ou3$/$1Z/
+    - xform/(.)en2$/$1S/
+    - xform/(.)ang4$/$1D/
+    - xform/(.)ong1$/$1K/
+    - xform/(.)ong5$/$1K/
+    - xform/(.)ei4$/$1K/
+    - xform/(.)ai2$/$1D/
+    - xform/(.)ao4$/$1V/
+    - xform/(.)ao3$/$1X/
+    - xform/(.)ao2$/$1I/
+    - xform/(.)ao1$/$1Q/
+    - xform/(.)en1$/$1E/
+    - xform/(.)en5$/$1E/
+    - xform/en1$/E/
+    - xform/en5$/E/
+    - xform/ia4$/X/
+    - xform/(.)eng1$/$1C/
+    - xform/(.)eng5$/$1C/
+    - xform/eng1$/C/
+    - xform/eng5$/C/
+    - xform/uo4$/P/
+    - xform/(.)eng2$/$1F/
+    - xform/eng2$/F/
+    - xform/uo1$/S/
+    - xform/uo5$/S/
+    - xform/(.)ong4$/$1Y/
+    - xform/ing2$/N/
+    - xform/ia1$/D/
+    - xform/ia5$/D/
+    - xform/(.)ang1$/$1U/
+    - xform/(.)ang5$/$1U/
+    - xform/(.)ou4$/$1R/
+    - xform/(.)ai1$/$1B/
+    - xform/(.)ai5$/$1B/
+    - xform/in1$/H/
+    - xform/in5$/H/
+    - xform/uo3$/L/
+    - xform/in4$/V/
+    - xform/(.)ong2$/$1J/
+    - xform/ing1$/E/
+    - xform/ing5$/E/
+    - xform/ing4$/W/
+    - xform/(.)ou1$/$1X/
+    - xform/(.)ou5$/$1X/
+    - xform/(.)an2$/$1P/
+    - xform/(.)en3$/$1O/
+    - xform/en3$/O/
+    - xform/(.)en4$/$1O/
+    - xform/en4$/O/
+    - xform/(.)ao5$/$1Q/
+    - xform/(.)ang3$/$1P/
+    - xform/(.)an1$/$1N/
+    - xform/(.)an5$/$1N/
+    - xform/uo2$/L/
+    - xform/ie1$/K/
+    - xform/ie5$/K/
+    - xform/(.)an4$/$1A/
+    - xform/(.)eng3$/$1Y/
+    - xform/eng3$/Y/
+    - xform/(.)eng4$/$1F/
+    - xform/eng4$/F/
+    - xform/(.)ei2$/$1R/
+    - xform/ue2$/I/
+    - xform/(.)ong3$/$1N/
+    - xform/(.)ou2$/$1A/
+    - xform/ui1$/T/
+    - xform/ui2$/W/
+    - xform/ui3$/V/
+    - xform/ui4$/F/
+    - xform/ui5$/T/
+    - xform/(.)ei3$/$1J/
+    - xform/ie2$/S/
+    - xform/ue4$/D/
+    - xform/ue3$/O/
+    - xform/(.)ang2$/$1W/
+    - xform/ie3$/C/
+    - xform/(.)ei1$/$1I/
+    - xform/(.)ei5$/$1I/
+    - xform/(.)ai3$/$1U/
+    - xform/v1$/H/
+    - xform/v2$/M/
+    - xform/v3$/S/
+    - xform/v4$/F/
+    - xform/(.)an3$/$1O/
+    - xform/in2$/C/
+    - xform/un4$/R/
+    - xform/er1$/eQ/
+    - xform/er2$/eK/
+    - xform/er3$/eU/
+    - xform/er4$/eH/
+    - xform/er5$/eQ/
+    - xform/iu5$/Z/
+    - xform/iu4$/O/
+    - xform/iu3$/Z/
+    - xform/iu2$/M/
+    - xform/iu1$/Z/
+    - xform/(.)a1$/$1L/
+    - xform/(.)a2$/$1U/
+    - xform/(.)a3$/$1M/
+    - xform/(.)a4$/$1I/
+    - xform/(.)a5$/$1L/
+    - xform/(.)e1$/$1R/
+    - xform/(.)e2$/$1E/
+    - xform/(.)e3$/$1L/
+    - xform/(.)e4$/$1I/
+    - xform/(.)e5$/$1R/
+    - xform/(.)o1$/$1P/
+    - xform/(.)o2$/$1E/
+    - xform/(.)o3$/$1I/
+    - xform/(.)o4$/$1G/
+    - xform/(.)o5$/$1P/
+    - xform/i5$/J/
+    - xform/i4$/T/
+    - xform/i3$/G/
+    - xform/i2$/B/
+    - xform/i1$/J/
+    - xform/u5$/A/
+    - xform/u4$/H/
+    - xform/u3$/M/
+    - xform/u2$/L/
+    - xform/u1$/A/
+    - xlit/QWERTYUIOPASDFGHMJCKLZXVBN/qwertyuiopasdfghmjcklzxvbn/
+translator:
+  dictionary: zrlong_sentence
+  prism: zrlong_sentence
+  db_class: tabledb
+  # enable_charset_filter: false
+  contextual_suggestions: true
+  enable_sentence: false
+  enable_completion: true
+  enable_user_dict: true
+  initial_quality: 10000
+grammar:
+  language: zh-hans-t-essay-bgc
+
+custom_phrase: # 自定義短語
+  dictionary: ""
+  user_dict: zrlong_custom_phrases
+  db_class: stabledb
+  enable_completion: false
+  enable_sentence: false
+  initial_quality: 20000
+
+
+# repeat: # 重複上屏
+#   input: "="
+#   size: 1
+#   initial_quality: 0
+
+
+emoji:
+  opencc_config: moran_emoji.json
+  option_name: emoji
+  tips: all
+
+
+punctuator:
+  import_preset: symbols
+
+key_binder:
+  import_preset: default
+  bindings:
+    - { when: has_menu, accept: ";", send: "2" } # 分号次选
+    - { when: has_menu, accept: "Control+e", toggle: emoji }
+
+recognizer:
+  import_preset: default
+  patterns:
+    reverse_lookup: "(^(``[a-z`]+))|(^([a-z]{2}(`[a-z`]?|[a-z`]`)))"
+    punct: "^/([0-9]0?|[A-Za-z]+)$"
+
+menu:
+  page_size: 5
+  alternative_select_keys: "12345" 
