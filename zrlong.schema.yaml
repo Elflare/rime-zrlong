@@ -2,14 +2,12 @@ schema:
   schema_id: zrlong
   name: 自然龙
   version: "20240225"
-  icon: "微软雅黑中.ico" # string 方案图标，格式： .ico
-  ascii_icon: "微软雅黑英.ico"
   author:
     - 自然碼發明人：周志農
     - 方案製作：晡时之光
     - modded by 小幽幽
   description: |
-    乱序韵母，自然辅。
+    带调双拼，自然辅。
   dependencies:
     - tigress
     - zrlf
