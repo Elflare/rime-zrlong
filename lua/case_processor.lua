@@ -31,8 +31,7 @@ local function func(key_event, env)
         end
         context:clear()
         return 1
-    else
-        return 2
     end
+    return 2
 end
 return func
