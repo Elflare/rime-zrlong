@@ -244,7 +244,7 @@ translator:
   enable_user_dict: true
   initial_quality: 10000
 grammar:
-  language: zh-hans-t-essay-bgc
+  language: zh-hans-t-essay-bgw
 
 custom_phrase: # 自定義短語
   dictionary: ""
