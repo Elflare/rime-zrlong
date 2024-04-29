@@ -162,7 +162,7 @@
 | `'` 开头（前缀会被隐藏）     | `'ztp'rp'lj` | ![示例图片](https://raw.githubusercontent.com/Elflare/images-repo/main/zrlong/sample/zrl_zaoci.jpg) |
 | 打出一个字，上屏之前再按 `'` | `ztp'rp'lj`  | ![示例图片](https://raw.githubusercontent.com/Elflare/images-repo/main/zrlong/sample/zrl_zaoci.jpg) |
 
-> 造的词排在默认编码之后。文件在 `zrlong.txt` 中。
+> 造的词排在默认编码之后。存储在 `zrlong.txt` 中。
 
 #### 工具
 
