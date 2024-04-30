@@ -205,8 +205,9 @@
 
 - Rime 项目所发布的高品质输入法程序和词库
 - [℞ 魔然](https://github.com/ksqsf/rime-moran)：反查、造词、中文数字小写转大写、Emoji、简码提示等均借鉴自魔然
-- [℞ 地球拼音](https://github.com/rime/rime-terra-pinyin)
-- [虎码](https://tiger-code.com/)
+- [℞ 地球拼音](https://github.com/rime/rime-terra-pinyin)：很多字的音调信息
+- [℞ 冰雪拼音](https://github.com/hanzi-chai/rime-snow-pinyin)：整句模式使用的冰雪拼音数据
+- [虎码](https://tiger-code.com/)：词频信息
 - [测评工具](https://yb6b.github.io/#/)
 
 ---
