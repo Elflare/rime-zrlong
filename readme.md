@@ -108,7 +108,7 @@
 
 > This picture is from [℞ 魔然](https://raw.githubusercontent.com/ksqsf/rime-moran/wiki/%E6%95%99%E7%A8%8B#其二曰自然碼輔助碼)
 
-> 部首主要参考自 [汉典](https://www.zdic.net/hans/) 和 [百度百科](https://baike.baidu.com/)
+> 部首主要参考自 [汉典](https://www.zdic.net/) 和 [百度百科](https://baike.baidu.com/)
 ### 编码方式
 
 #### 单字编码
