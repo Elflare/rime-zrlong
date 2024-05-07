@@ -177,7 +177,7 @@ speller:
     - xform/ue2$/I/
     - xform/ue3$/O/
     - xform/ue4$/D/
-    - xform/ue4$/U/
+    - xform/ue5$/U/
     - xform/(.)ang2$/$1W/
     - xform/ie1$/K/
     - xform/ie2$/S/
