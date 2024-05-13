@@ -4,7 +4,7 @@ jobs:
   push_gitlab:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0 # 确保获取完整的仓库历史
 
