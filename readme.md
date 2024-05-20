@@ -183,7 +183,6 @@
 - **分号次选**：在 `zrlong.schema.yaml` 中的 `key_binder` 处配置
 - **英文输入**：
   - 默认没开启空码自动清屏，所以空码时可直接输入英文
-  - 默认**关闭了左 Shift 切换英文，仅使用右 Shift 和右 Ctrl 切换**，若想改变，请在 `default.custom.yaml` 中，将 `"ascii_composer/switch_key/Shift_L": noop` 这行注释掉，或将 `noop` 改为 `commit_code`
   - 首字母大写，用回车上屏自动转为小写：如 `Zrlong`，按回车后变为 `zrlong`
   - 首字母大写，用空格上屏则不变：如 `Zrlong`，按空格则为 `Zrlong`
 - **简码提示**：可显示字或词的简码：
