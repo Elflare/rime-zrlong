@@ -58,11 +58,6 @@
 - 首先确保已经装了 [Rime](https://rime.im/)
 - 若已有 Rime 的配置文件，请先备份
 
-**可选**:
-
-- 本配置所使用的字体为[霞鹜文楷](https://github.com/lxgw/LxgwWenKai)
-- 若想更换其他字体，可在 `weasel.custom.yaml` 中进行配置
-
 ### 使用 `Git` 安装
 
 > 如果您还没有安装 Git，需要先下载并安装 [Git](https://git-scm.com/)，或使用[手动安装](#手动安装)。
