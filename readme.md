@@ -43,6 +43,7 @@
 - **手感优化**: 韵母分布利用程序算法 + 人工设计，**重码率**和**手感**皆超过传统音形、形码输入法。
 - **字词库大**: 目前已包含 **4.5 万 +** 单字和 **约 17 万** 词组。
 
+
 > 本仓库基于 Rime 平台。
 
 ---
@@ -50,7 +51,7 @@
 **NEW**:
 - 2024 年 4 月 25 日增加了整句模式，和普通双拼打法一样，不再赘述。(Thanks to [冰雪拼音](https://github.com/hanzi-chai/rime-snow-pinyin))<br>
 - 2024 年 5 月 13 日新增带辅的整句模式。由于内容太多，未合并至本仓库，详情见 [魔龙](https://github.com/jack2game/rime-molong)。
-
+-  **线上试用**：[自然龙线上试用](https://my-rime.vercel.app/?plum=Elflare/rime-zrlong:zrlong,zrlong_sentence)
 ## 安装
 
 **注意**：
