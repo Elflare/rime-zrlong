@@ -110,7 +110,7 @@
 
 ![辅助码字根](https://raw.githubusercontent.com/Elflare/images-repo/main/zrlong/sample/fuzhuma.jpg)
 
-> This picture is from [℞ 魔然](https://raw.githubusercontent.com/ksqsf/rime-moran/wiki/%E6%95%99%E7%A8%8B#其二曰自然碼輔助碼)
+> This picture is from [℞ 魔然](https://github.com/rimeinn/rime-moran)
 
 > 部首主要参考自 [汉典](https://www.zdic.net/) 和 [百度百科](https://baike.baidu.com/)
 ### 编码方式
@@ -148,7 +148,7 @@
 - 虎码反查：用 \` 引导，`X` 代表任意字母，`+` 代表需要一个或多个字母
 - 笔画反查：用 `obh` 引导，`hpszd` 分别代表横撇竖折点，`+` 代表需要一个或多个字母
 - 两分反查：用 `olf` 引导，自然码双拼编码，`+` 代表需要一个或多个字母
-  > 在反查时，上述前缀会被隐藏，以避免干扰。
+> 在反查时，上述前缀会被隐藏，以避免干扰。
 
 |  反查方式  |       规则       | 演示编码 |                                             演示图片                                              |
 | :--------: | :--------------: | :------: | :-----------------------------------------------------------------------------------------------: |
