@@ -213,7 +213,8 @@
 - [℞ 冰雪拼音](https://github.com/hanzi-chai/rime-snow-pinyin)：整句模式使用的冰雪拼音数据
 - [虎码](https://tiger-code.com/)：词频信息
 - [测评工具](https://yb6b.github.io/#/)
-
+---
+[![Star History Chart](https://api.star-history.com/svg?repos=rimeinn/rime-zrlong&type=Date)](https://star-history.com/#rimeinn/rime-zrlong&Date)
 ---
 
 协议：方案主体依 [CC-BY 4.0](http://creativecommons.org/licenses/by/4.0/) 协议，除非对应文件中另有说明。
